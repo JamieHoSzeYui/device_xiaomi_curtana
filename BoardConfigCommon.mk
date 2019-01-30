@@ -133,6 +133,7 @@ TARGET_BOARD_PLATFORM := atoll
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+TARGET_TAP_TO_WAKE_NODE := "/dev/input/event3"
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
