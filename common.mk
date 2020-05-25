@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
     r-gsi.avbpubkey \
     s-gsi.avbpubkey
 
+# Bluetooth
+PRODUCT_PACKAGES += \
+    BluetoothQti
+
 # Camera
 PRODUCT_PACKAGES += \
     Snap
@@ -74,12 +78,14 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-du
+    $(LOCAL_PATH)/overlay-du \
+    $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-du/lineage-sdk \
-    $(LOCAL_PATH)/overlay-du/packages/apps/Snap
+    $(LOCAL_PATH)/overlay-du/packages/apps/Snap \
+    $(LOCAL_PATH)/overlay-system
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
