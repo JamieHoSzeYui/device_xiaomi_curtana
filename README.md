@@ -1,4 +1,5 @@
-Copyright (C) 2020 - The LineageOS Project
-
-Common device tree for Xiaomi SM6250 based devices
+Device Identifier for Redmi Note 9S (curtana)
 ==============
+
+
+Wip, will grab u a noice readme soon
