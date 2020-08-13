@@ -52,6 +52,9 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
+# DT2W Fix 
+TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
