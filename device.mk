@@ -97,14 +97,12 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-du \
-    $(LOCAL_PATH)/overlay-system
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-du/lineage-sdk \
-    $(LOCAL_PATH)/overlay-du/packages/apps/Snap \
-    $(LOCAL_PATH)/overlay-system
+    $(LOCAL_PATH)/overlay/lineage-sdk \
+    $(LOCAL_PATH)/overlay/packages/apps/Snap \
+    $(LOCAL_PATH)/overlay
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
